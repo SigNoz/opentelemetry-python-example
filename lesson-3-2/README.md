@@ -77,7 +77,7 @@ Interact with the Flask application to generate tracing data and send it to SigN
 
 Once you've created some dummy telemetry by interacting with your application, you will be able to find your application under the `Services` tab of SigNoz.
 
-![Application being monitored in SigNoz](static/images/application-monitored.png)
+![Application being monitored in SigNoz](../../static/images/application-monitored.png)
 
 
 ## Next Steps
