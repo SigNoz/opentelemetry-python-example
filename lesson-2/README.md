@@ -24,17 +24,17 @@ In this tutorial series, we will be using SigNoz Cloud to visualize everything t
 After you sign up and verify your email, you will be provided with details of your SigNoz cloud instance. Once you set up your password and log in, you will be greeted with the following onboarding screen.
 
 
-![SigNoz onboarding screen](static/images/onboarding-screen.png)
+![SigNoz onboarding screen](../../static/images/onboarding-screen.png)
 
 Since we will be following instructions from the tutorial, you can skip onboarding by clicking on the SigNoz logo.
 
 You will see the below screen:
 
-![Services tab in SigNoz shows the list of services being monitored](static/images/signoz-screen.png)
+![Services tab in SigNoz shows the list of services being monitored](../../static/images/signoz-screen.png)
 
 For sending data to SigNoz cloud, you will be needing details like ingestion key and region. You can find them under `Ingestion Settings` under `Settings`.
 
-![Ingestion Settings](static/images/ingestion-settings.png)
+![Ingestion Settings](../../static/images/ingestion-settings.png)
 
 ## **Self-Host SigNoz**
 
