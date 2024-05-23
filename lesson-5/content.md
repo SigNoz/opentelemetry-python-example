@@ -1,6 +1,4 @@
-url - `opentelemetry-python-manual-instrumentation`
-
----
+# Lesson 5: Creating custom metrics in Python Application using OpenTelemetry
 
 In the previous tutorials, we have seen how to manually create spans in a Python application. In this tutorial, we will look at how to create custom metrics using OpenTelemetry.
 
@@ -101,7 +99,33 @@ The `create_gauge()` method creates a gauge instrument with the given name, unit
 
 ## Step 6: See your metrics in SigNoz
 
-<screenshots showing exact metrics that was created with manual instrumentation>
+The sample code for lesson 5 has a custom metric named `todo_counter` which keeps a track of number of To-Dos added by the user. You can create customized dashboards to monitor your custom metrics.
+
+In order to see your custom metric in SigNoz, run the updated code with custom metric in Lesson 5.
+
+```bash
+OTEL_RESOURCE_ATTRIBUTES=service.name=my-application \
+OTEL_EXPORTER_OTLP_ENDPOINT="https://ingest.{region}.signoz.cloud:443" \
+OTEL_EXPORTER_OTLP_HEADERS="signoz-access-token=<SIGNOZ_INGESTION_KEY>" \
+python lesson-5/app.py
+```
+
+Let's suppose you add 6 tasks in your to-do application.
+
+![6 tasks added in the to-do application](static/images/6-tasks.png)
+
+You can go to `Dashboards` in SigNoz and create a new panel to monitor the number of tasks in your to-do application using the `todo_counter` metric.
+
+![todo_counter metric](static/images/custom-metrics-opentelemetry-python.png)
+
+You can create a value panel type and monitor the number of tasks being created.
+
+![Value panel type](static/images/no-of-tasks-added.png)
+
+You can also set alerts on metrics based on your use-case directly from these panels.
+
+![Value panel type](static/images/create-alerts-custom-metrics.png)
+
 
 ## Next Steps
 
