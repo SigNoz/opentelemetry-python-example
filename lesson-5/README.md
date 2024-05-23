@@ -112,19 +112,19 @@ python lesson-5/app.py
 
 Let's suppose you add 6 tasks in your to-do application.
 
-![6 tasks added in the to-do application](../../static/images/6-tasks.png)
+![6 tasks added in the to-do application](../static/images/6-tasks.png)
 
 You can go to `Dashboards` in SigNoz and create a new panel to monitor the number of tasks in your to-do application using the `todo_counter` metric.
 
-![todo_counter metric](../../static/images/custom-metrics-opentelemetry-python.png)
+![todo_counter metric](../static/images/custom-metrics-opentelemetry-python.png)
 
 You can create a value panel type and monitor the number of tasks being created.
 
-![Value panel type](../../static/images/no-of-tasks-added.png)
+![Value panel type](../static/images/no-of-tasks-added.png)
 
 You can also set alerts on metrics based on your use-case directly from these panels.
 
-![Value panel type](../../static/images/create-alerts-custom-metrics.png)
+![Value panel type](../static/images/create-alerts-custom-metrics.png)
 
 
 ## Next Steps

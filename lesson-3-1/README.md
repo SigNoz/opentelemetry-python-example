@@ -98,11 +98,11 @@ Interact with the Flask application to generate tracing data and send it to SigN
 
 Once you've created some dummy telemetry by interacting with your application, you will be able to find your application under the `Services` tab of SigNoz.
 
-![Application being monitored in SigNoz](../../static/images/application-monitored.png)
+![Application being monitored in SigNoz](../static/images/application-monitored.png)
 
 You can click on the application to see useful application metrics like latency, requests rates, error rates, apdex score, key operations, etc.
 
-![Monitor things like application latency, requests per sec, error percentage, apdex and see your top endpoints with SigNoz.](../../static/images/application-monitored.png)
+![Monitor things like application latency, requests per sec, error percentage, apdex and see your top endpoints with SigNoz.](../static/images/application-monitored.png)
 
 ## Additional: Troubleshooting if you can’t see data in SigNoz
 
