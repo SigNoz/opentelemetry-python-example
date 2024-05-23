@@ -1,8 +1,6 @@
-url - `opentelemetry-python-example`
+# Lesson 3.1: OpenTelemetry Auto-Instrumentation of Python Application
 
----
-
-In the previous tutorial, we created a Flask to-do application with MongoDB.
+In the previous tutorial, we set up SigNoz so that we can send the data collected by OpenTelemetry to it.
 
 In this tutorial, we will set up automatic traces, metrics and logs collection in our Flask application with OpenTelemetry. We will make use of auto-instrumentation tools that set up everything for us. With auto-instrumentation, you can configure your Python application to collect telemetry without any changes in the application code.
 
@@ -34,7 +32,9 @@ This package includes the OpenTelemetry SDK, the OTLP exporter, and the necessar
 
 ## Step 2: Use `opentelemetry-bootstrap` for Auto-Instrumentation
 
-With the distro package installed, we can use the `opentelemetry-bootstrap` tool to automatically install the required instrumentation libraries for our application. This tool inspects the environment and detects the frameworks and libraries installed. It then finds and installs the appropriate instrumentation libraries, ensuring comprehensive auto-instrumentation. For example, if you have Flask installed, it will install the `opentelemetry-instrumentation-flask` package (as long as the version is supported).
+With the distro package installed, we can use the `opentelemetry-bootstrap` tool to automatically install the required instrumentation libraries for our application. This tool inspects the environment and detects the frameworks and libraries installed. 
+
+It then finds and installs the appropriate instrumentation libraries, ensuring comprehensive auto-instrumentation. For example, if you have Flask installed, it will install the `opentelemetry-instrumentation-flask` package (as long as the version is supported).
 
 Run the following command to install the required instrumentation packages:
 
@@ -96,7 +96,13 @@ Interact with the Flask application to generate tracing data and send it to SigN
 
 ## Step 5: See Trace Data in SigNoz
 
-<Insert screenshots showing actual spans from the code>
+Once you've created some dummy telemetry by interacting with your application, you will be able to find your application under the `Services` tab of SigNoz.
+
+![Application being monitored in SigNoz](static/images/application-monitored.png)
+
+You can click on the application to see useful application metrics like latency, requests rates, error rates, apdex score, key operations, etc.
+
+![Monitor things like application latency, requests per sec, error percentage, apdex and see your top endpoints with SigNoz.](static/images/application-monitored.png)
 
 ## Additional: Troubleshooting if you can’t see data in SigNoz
 
@@ -107,7 +113,7 @@ Interact with the Flask application to generate tracing data and send it to SigN
 ```bash
 OTEL_RESOURCE_ATTRIBUTES=service.name=my-application \
 OTEL_EXPORTER_OTLP_ENDPOINT="https://ingest.in.signoz.cloud:443" \
-OTEL_EXPORTER_OTLP_HEADERS="signoz-access-token=72282c07-60ad-45ff-9131-3b8819f9cdc3" \
+OTEL_EXPORTER_OTLP_HEADERS="signoz-access-token=<SIGNOZ_INGESTION_KEY>" \
 OTEL_EXPORTER_OTLP_PROTOCOL=grpc \
 OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED=true \
 OTEL_TRACES_EXPORTER=console \
