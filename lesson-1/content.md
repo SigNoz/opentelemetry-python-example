@@ -1,6 +1,6 @@
-url - `signoz.io/opentelemetry/python-environment-setup/`
+# Lesson 1: Setting up the environment
 
----
+In this lesson, we will be setting up a basic Flask application.
 
 ## Flask To-Do App with MongoDB
 
@@ -50,7 +50,9 @@ python -m pip install -r requirements.txt
 Make sure MongoDB is installed and running on the default port (27017). You can start it manually or use a process manager. To check if MongoDB is running, use:
 
 ```bash
-pgrep mongod
+
+pgrep mongod  # If a process ID is returned, MongoDB is running
+ 
 ```
 
 If MongoDB is running, you should see a process ID. If not, start MongoDB with the following command:

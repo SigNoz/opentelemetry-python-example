@@ -1,6 +1,4 @@
-url - `opentelemetry-python-manual-instrumentation`
-
----
+# Lesson 4: Create Manual Spans in Python application using OpenTelemetry
 
 In the previous tutorials, we set up out of the box tracing, metrics and logs in our Flask application. In this tutorial, we will show you how to manually create spans.
 
@@ -187,7 +185,22 @@ def my_function():
 
 ## Step 6: See your Spans in SigNoz
 
-<screenshots showing exact spans that was created with manual instrumentation>
+The sample code for lesson 4 has a manual span named `add_task` which gets created whenever you create a new task in the to-do application. To see this span go to the `Traces` tab and apply filters for your application.
+
+```bash
+OTEL_RESOURCE_ATTRIBUTES=service.name=my-application \
+OTEL_EXPORTER_OTLP_ENDPOINT="https://ingest.{region}.signoz.cloud:443" \
+OTEL_EXPORTER_OTLP_HEADERS="signoz-access-token=<SIGNOZ_INGESTION_KEY>" \
+python lesson-4/app.py
+```
+
+Once you run the application and add a task, you will be able to see it in SigNoz.
+
+![Manual span in the list view of traces](static/images/manual-spans.png)
+
+You can see your span in the trace detail view too which will show how the request flowed and how much it took for the `add_task` operation.
+
+![See your span in detailed trace view](static/images/manual-spans.png)
 
 ## Next Steps
 

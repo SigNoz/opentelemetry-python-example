@@ -1,6 +1,4 @@
-url - `opentelemetry-python-example`
-
----
+# Lesson 3.2: OpenTelemetry Manual Instrumentation of Python Application
 
 In the previous tutorial, we set up auto-instrumentation for our Flask application with OpenTelemetry without any code changes. In this tutorial, we will manually configure the agent.
 
@@ -67,7 +65,7 @@ Now, let's see how to run the application.
 ```bash
 OTEL_RESOURCE_ATTRIBUTES=service.name=my-application \
 OTEL_EXPORTER_OTLP_ENDPOINT="https://ingest.in.signoz.cloud:443" \
-OTEL_EXPORTER_OTLP_HEADERS="signoz-access-token=72282c07-60ad-45ff-9131-3b8819f9cdc3" \
+OTEL_EXPORTER_OTLP_HEADERS="signoz-access-token=<SIGNOZ_INGESTION_KEY>" \
 python lesson-3-2/app.py
 ```
 
@@ -77,7 +75,9 @@ Interact with the Flask application to generate tracing data and send it to SigN
 
 ## Step 5: See Trace Data in SigNoz
 
-<Insert screenshots showing actual spans from the code>
+Once you've created some dummy telemetry by interacting with your application, you will be able to find your application under the `Services` tab of SigNoz.
+
+![Application being monitored in SigNoz](static/images/application-monitored.png)
 
 
 ## Next Steps
