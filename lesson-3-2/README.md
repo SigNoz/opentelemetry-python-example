@@ -1,4 +1,4 @@
-# Lesson 3.2: OpenTelemetry Manual Instrumentation of Python Application
+# Lesson 3.2: Manually configure OpenTelemetry agent 
 
 In the previous tutorial, we set up auto-instrumentation for our Flask application with OpenTelemetry without any code changes. In this tutorial, we will manually configure the agent.
 
