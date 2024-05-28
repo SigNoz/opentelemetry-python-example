@@ -1,6 +1,4 @@
-url - `opentelemetry-python-manual-instrumentation`
-
----
+# Lesson 6: Configure OpenTelemetry logging SDK in Python
 
 In the previous tutorials, we have seen how to manually create spans in a Python application. In this tutorial, we will look at how to configure OTel logging SDK in Python application.
 
