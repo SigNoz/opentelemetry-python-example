@@ -8,27 +8,34 @@ In this guide, you will learn how to implement OpenTelemetry in Python Applicati
 
 ---
 
-### Lesson 1: Setting up a basic Flask application
+[Lesson 1: Setting up a basic Flask application](/lesson-1)   
+In this tutorial, you will create a simple Flask to-do application with MongoDB.
 
-### Lesson 2: Setting up SigNoz
 
-### Lesson 3-1: Auto-instrumentation with OpenTelemetry
-Set up automatic traces, metrics and logs collection in our Flask application.
+[Lesson 2: Setting up SigNoz](/lesson-2)   
+OpenTelemetry does not provide a storage and analytics layer. In this tutorial, you will set up SigNoz to send your OpenTelemetry data.
 
-### Lesson 3-2: Manual instrumentation with OpenTelemetry
+[Lesson 3-1: Auto-instrumentation with OpenTelemetry](/lesson-3-1)   
+Set up automatic traces, metrics, and logs collection in the Flask application.
+
+[Lesson 3-2: Manual instrumentation with OpenTelemetry](/lesson-3-2)   
 Learn how to implement manual instrumentation with OpenTelemetry for more granular controls.
 
-### Lesson 4: Create spans manually in your Python application
+[Lesson 4: Create spans manually in your Python application](/lesson-4)   
 Learn how to create manual spans and add metadata and attributes to them.
 
-### Lesson 5: Create custom metrics with OpenTelemetry
+[Lesson 5: Create custom metrics with OpenTelemetry](/lesson-5)   
 Create custom metrics like counter, gauge, histogram in your application.
 
-### Lesson 6: Configure OpenTelemetry logging SDK in Python
+[Lesson 6: Configure OpenTelemetry logging SDK in Python](/lesson-6)   
 Learn how to configure OpenTelemetry logging SDK in Python.
 
-### Lesson 7: Customize metrics streams produced by OpenTelemetry SDK using views
-
+[Lesson 7: Customize metrics streams produced by OpenTelemetry SDK using views](/lesson-7)   
+In this tutorial, learn how to:
+- how to configure to change the default aggregation using the name of the instrument
+- how to have multiple exporter with different temporalities
+- how to limit the number of attributes that are output for a metric
+- how to drop a metric entirely
 
 ---
 
