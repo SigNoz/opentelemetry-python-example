@@ -13,7 +13,7 @@ To demonstrate how to integrate OpenTelemetry in a Python application, we'll cre
 
 ## Code Repo
 
-The code samples for this tutorial series are present at this [GitHub repo](https://github.com/ankit01-oss/opentelemetry-python-example). You can follow the series by cloning the repo and running the application from the respective lesson directories.
+The code samples for this tutorial series are present at this [GitHub repo](https://github.com/SigNoz/opentelemetry-python-example). You can follow the series by cloning the repo and running the application from the respective lesson directories.
 
 ## Step 1: Clone the GitHub Repository
 
