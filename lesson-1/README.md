@@ -20,7 +20,7 @@ The code samples for this tutorial series are present at this [GitHub repo](http
 First, clone the GitHub repository to your local machine. Open a terminal and run the following commands to clone the repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/ankit01-oss/opentelemetry-python-example.git
+git clone https://github.com/SigNoz/opentelemetry-python-example.git
 cd opentelemetry-python-example
 ```
 
