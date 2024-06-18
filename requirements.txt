@@ -1,4 +1,4 @@
 Flask==3.0.0
 pymongo==4.7.2
-requests==2.31.0
+requests==2.32.2
 opentelemetry-distro[otlp]==0.45b0
