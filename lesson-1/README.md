@@ -79,4 +79,4 @@ Now that application is running, you can interact with the application at `http:
 
 In this tutorial, we've created a Flask-based to-do application with MongoDB database. The application service interacts with MongoDB to manage tasks.
 
-In the next lesson, we will set up basic auto-instrumentation in our Flask application with OpenTelemetry.
+In the [next lesson](https://github.com/SigNoz/opentelemetry-python-example/tree/main/lesson-2), we will set up SigNoz, an OpenTelemetry-native APM. OpenTelemetry does not provide a storage and analytics layer, and you need a backend to send the collected data to.
