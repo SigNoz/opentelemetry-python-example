@@ -130,3 +130,5 @@ You can also set alerts on metrics based on your use-case directly from these pa
 ## Next Steps
 
 In this tutorial, we configured the Python application to create custom metrics. Manual instrumentation gives you more granular control on setting up tracing in your Python application.
+
+In the [next lesson](https://github.com/SigNoz/opentelemetry-python-example/tree/main/lesson-6), we will learn how to configure OpenTelemetry logging SDK in Python.
