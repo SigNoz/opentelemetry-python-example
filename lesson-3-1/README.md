@@ -133,6 +133,6 @@ This command will export traces, metrics, and logs to the console. If you don't 
 
 In this tutorial, we set up auto-instrumentation for our Flask app with OpenTelemetry. Implementing tracing/metrics/logs with OpenTelemetry is easy as it involves no code changes.
 
-In the next lesson, we will learn how to instrument our application and create spans manually.
+In the [next lesson](https://github.com/SigNoz/opentelemetry-python-example/tree/main/lesson-3-2), we will manually configure the agent to instrument our application.
 
 ---
