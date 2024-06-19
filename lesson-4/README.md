@@ -200,7 +200,7 @@ Once you run the application and add a task, you will be able to see it in SigNo
 
 You can see your span in the trace detail view too which will show how the request flowed and how much it took for the `add_task` operation.
 
-![See your span in detailed trace view](../static/images/manual-spans.png)
+![See your span in detailed trace view](../static/images/trace-details-manual-span.png)
 
 ## Next Steps
 
