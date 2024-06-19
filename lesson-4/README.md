@@ -206,4 +206,4 @@ You can see your span in the trace detail view too which will show how the reque
 
 In this tutorial, we configured the Python application to create spans manually. Manual instrumentation gives you more granular control on setting up tracing in your Python application.
 
-In the next tutorial, we will be using OpenTelemetry to generate custom metrics.
+In the [next tutorial](https://github.com/SigNoz/opentelemetry-python-example/tree/main/lesson-5), we will be using OpenTelemetry to generate custom metrics.
