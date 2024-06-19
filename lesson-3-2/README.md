@@ -84,6 +84,6 @@ Once you've created some dummy telemetry by interacting with your application, y
 
 In this tutorial, we have seen the steps to configure the agent with some code changes.
 
-In the next lesson, we will learn how to instrument our application and create spans manually.
+In the [next lesson](https://github.com/SigNoz/opentelemetry-python-example/tree/main/lesson-4), we will learn how to create spans manually.
 
 ---
