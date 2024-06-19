@@ -35,3 +35,5 @@ In the above code snippet, a handler is created using the `LoggingHandler` class
 ## Next Steps
 
 In this tutorial, we configured the Python application to send logs to SigNoz using the OpenTelemetry logging SDK.
+
+In the [next lesson](https://github.com/SigNoz/opentelemetry-python-example/tree/main/lesson-7), we will learn how to customize metrics stream produced by OpenTelemetry SDK using views.
