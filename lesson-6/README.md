@@ -28,7 +28,7 @@ logging.getLogger().addHandler(handler)
 
 In the above code snippet, a handler is created using the `LoggingHandler` class. The handler is attached to the root logger using the `addHandler()` method. The handler receives log records from the logger and sends them to the OTLP backend using the `OTLPLogExporter`.
 
-## Step 6: See your logs in SigNoz
+## See your logs in SigNoz
 
 <screenshots showing exact logs that was created with manual instrumentation>
 
